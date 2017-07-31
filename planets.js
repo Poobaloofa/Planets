@@ -1,3 +1,17 @@
+var sun = {
+	mass: 1.989e30,
+	rad: 6.957e8,
+  color: "#ffbb00",
+	pos: new vector2(c.width/2,c.height/2),
+	draw(){
+  	ctx.beginPath();
+		ctx.arc(this.pos.x,this.pos.y,Math.log(this.rad*this.rad*this.rad)-40,0,2*Math.PI);
+		ctx.fillStyle = this.color;
+		ctx.fill();
+    ctx.stroke();
+	},
+}
+
 function planet(color, radius, mass, v2pos, v2vel, v2acc, scaleBound){
 	this.scaleBound = scaleBound
 	this.color = color;
