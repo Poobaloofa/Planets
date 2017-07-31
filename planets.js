@@ -1,3 +1,6 @@
+var c = document.getElementById("canvas");
+var ctx = c.getContext("2d");
+
 var sun = {
 	mass: 1.989e30,
 	rad: 6.957e8,
