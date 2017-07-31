@@ -1,6 +1,10 @@
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 
+var G = 8.6496e-4 //m^3 kg^-1 hr^-2
+var speed = 10 //hrs per frame
+var scale = 1e9
+
 var objects = []
 var earth = new planet( "#1a75ff", 6.371e6, 5.972e24, new vector2(0,146e9), new vector2(1.09e8,0), new vector2(0,0),6e9)
 var mars = new planet( "#c73e1f", 3.39e6, 6.39e23, new vector2(0,206e9), new vector2(9.54e7,0), new vector2(0,0),9e9)
