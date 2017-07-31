@@ -4,7 +4,8 @@ var venus = new planet( "#dfbe9f", 6.052e6 , 4.867e24, new vector2(0,107e9), new
 var mercury = new planet( "#8c8c8c", 2.439e6 , 3.3011e23, new vector2(0,46e9), new vector2(2.123e8,0), new vector2(0,0))
 sun.draw()
 setInterval(function(){
-ctx.clearRect(0,0,c.width,c.height)
+ctx.fillStyle = "black"
+ctx.fillRect(0,0,c.width,c.height)
 sun.draw()
 earth.fullUpdate()
 mars.fullUpdate()
